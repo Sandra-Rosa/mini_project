@@ -1,0 +1,9 @@
+{
+  "name": "Speech to Text Extension",
+  "version": "1.0",
+  "description": "A Chrome extension that converts speech to text using JavaScript.",
+  "manifest_version": 3,
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
