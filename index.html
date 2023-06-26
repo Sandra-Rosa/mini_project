@@ -3,28 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Voice Note App</title>
+    <title>Verbalyze</title>
     <meta name="description" content="A Voice Note App that allows you to take voice and/or text notes and play them back.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Bootstrap CDN CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-0Mou2qXGeXK7k/Ue/a1hspEVcEP2zCpoQZw8/MPeUgISww+VmDJcy2ri9tX0a6iy" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="container-fluid align-center">
-        <img src="assets/img/code-mic-150.png" alt="Voice Note App Logo">
-        <h1>Voice Note App</h1>
-        <p class="page-description">This app allows you to take voice and/or text notes and play them back.</p>
-        <hr>
+    <div class="main">
+        <div id="myDiv">
+        <h1 id="logo">Verbalyze</h1>
+        <p class="page-description">"Transform Your Voice into Words: Let Your Words Speak!"</p>
+        </div>
         <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
         <div class="app">
             <div class="row">
-                <div class="col-md-6 align-center">
-                    <h3>Add New Voice Note</h3>
+                <div class="row1">
+                    <h3 class="heading1">Add New Voice Note</h3>
+                    <br/>
                     <div class="input-single">
                         <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
                     </div>
@@ -34,36 +33,29 @@
                     <p id="recording-instructions">Press the
                         <strong>Start Recognition</strong> button and allow access.</p>
                 </div>
-                <div class="col-md-6 align-center">
-                    <h3>My Voice Notes</h3>
+                <div class="row2">
+                    <h3 id="heading2">My Voice Notes</h3>
+                    <br/>
+                    <div class="noteslist">
                     <ul id="notes">
                         <li>
                             <p class="no-notes">You don't have any notes.</p>
                         </li>
                     </ul>
                 </div>
+                </div>
             </div>
-            <!-- /row -->
         </div>
-        <!-- /app -->
     </div>
 
     <div id="footer">
         <div class="clearfix1">
             <div class="container">
                 <div class="row">
-
-                    <div class="center">
-                        <p>Speech to Text Voice Note App 2018</p>
-                    </div>
-
                 </div>
-                <!-- /row -->
             </div>
-            <!-- /container -->
         </div>
     </div>
-    <!-- /footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
